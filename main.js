@@ -1,6 +1,7 @@
 const $doc = document;
 const createBtn = $doc.getElementById('create');
 const display = $doc.getElementById('display');
+const colors = $doc.getElementById('colors');
 const red = $doc.getElementById('red');
 const blue = $doc.getElementById('blue');
 const green = $doc.getElementById('green');
@@ -81,85 +82,113 @@ saveBtn.addEventListener('click', () => {
 
 red.addEventListener('click', () => {
     currentColor = 'red'
+    colors.style.boxShadow = '0px 0px 4px red';
 })
 blue.addEventListener('click', () => {
     currentColor = 'blue'
+    colors.style.boxShadow = '0px 0px 4px blue';
 })
 green.addEventListener('click', () => {
     currentColor = 'rgb(0, 255, 0)'
+    colors.style.boxShadow = '0px 0px 4px rgb(0, 255, 0)';
 })
 yellow.addEventListener('click', () => {
     currentColor = 'yellow'
+    colors.style.boxShadow = '0px 0px 4px yellow';
 })
 black.addEventListener('click', () => {
     currentColor = 'black'
+    colors.style.boxShadow = '0px 0px 4px black';
 })
 white.addEventListener('click', () => {
     currentColor = 'white'
+    colors.style.boxShadow = '0px 0px 4px white';
 })
 black2.addEventListener('click', () => {
     currentColor = 'rgb(98, 98, 98)'
+    colors.style.boxShadow = '0px 0px 4px rgb(98, 98, 98)';
 })
 purple.addEventListener('click', () => {
     currentColor = 'rgb(255, 0, 255)'
+    colors.style.boxShadow = '0px 0px 4px rgb(255, 0, 255)';
 })
 red2.addEventListener('click', () => {
     currentColor = 'rgb(134, 0, 0)'
+    colors.style.boxShadow = '0px 0px 4px rgb(134, 0, 0)';
 })
 blue2.addEventListener('click', () => {
     currentColor = 'rgb(0, 0, 161)'
+    colors.style.boxShadow = '0px 0px 4px rgb(0, 0, 161)';
 })
 green2.addEventListener('click', () => {
     currentColor = 'rgb(0, 192, 0)'
+    colors.style.boxShadow = '0px 0px 4px rgb(0, 192, 0)';
 })
 yellow2.addEventListener('click', () => {
     currentColor = 'rgb(214, 214, 0)'
+    colors.style.boxShadow = '0px 0px 4px rgb(214, 214, 0)';
 })
 white2.addEventListener('click', () => {
     currentColor = 'rgb(195, 195, 195)'
+    colors.style.boxShadow = '0px 0px 4px rgb(195, 195, 195)';
 })
 purple2.addEventListener('click', () => {
     currentColor = 'rgb(163, 0, 163)'
+    colors.style.boxShadow = '0px 0px 4px rgb(163, 0, 163)';
 })
 red3.addEventListener('click', () => {
     currentColor = 'rgb(77, 0, 0)'
+    colors.style.boxShadow = '0px 0px 4px rgb(77, 0, 0)';
 })
 blue3.addEventListener('click', () => {
     currentColor = 'rgb(0, 0, 100)'
+    colors.style.boxShadow = '0px 0px 4px rgb(0, 0, 100)';
 })
 green3.addEventListener('click', () => {
     currentColor = 'rgb(0, 143, 0)'
+    colors.style.boxShadow = '0px 0px 4px rgb(0, 143, 0)';
 })
 yellow3.addEventListener('click', () => {
     currentColor = 'rgb(148, 148, 0)'
+    colors.style.boxShadow = '0px 0px 4px rgb(148, 148, 0)';
 })
 white3.addEventListener('click', () => {
     currentColor = 'rgb(138, 138, 138)'
+    colors.style.boxShadow = '0px 0px 4px rgb(138, 138, 138)';
 })
 purple3.addEventListener('click', () => {
     currentColor = 'rgb(105, 0, 105)'
+    colors.style.boxShadow = '0px 0px 4px rgb(105, 0, 105)';
 })
 black3.addEventListener('click', () => {
     currentColor = 'rgb(129, 129, 129)'
+    colors.style.boxShadow = '0px 0px 4px rgb(129, 129, 129)';
 })
 red4.addEventListener('click', () => {
     currentColor = 'rgb(49, 0, 0)'
+    colors.style.boxShadow = '0px 0px 4px rgb(49, 0, 0)';
 })
 blue4.addEventListener('click', () => {
     currentColor = 'rgb(0, 0, 59)'
+    colors.style.boxShadow = '0px 0px 4px rgb(0, 0, 59)';
 })
 green4.addEventListener('click', () => {
     currentColor = 'rgb(0, 86, 0)'
+    colors.style.boxShadow = '0px 0px 4px rgb(0, 86, 0)';
 })
 yellow4.addEventListener('click', () => {
     currentColor = 'rgb(88, 88, 0)'
+    colors.style.boxShadow = '0px 0px 4px rgb(88, 88, 0)';
 })
 white4.addEventListener('click', () => {
     currentColor = 'rgb(99, 99, 99)'
+    colors.style.boxShadow = '0px 0px 4px rgb(99, 99, 99)';
 })
 purple4.addEventListener('click', () => {
     currentColor = 'rgb(68, 0, 68)'
+    colors.style.boxShadow = '0px 0px 4px rgb(68, 0, 68)';
 })
 black4.addEventListener('click', () => {
     currentColor = 'rgb(176, 176, 176)'
+    colors.style.boxShadow = '0px 0px 4px rgb(176, 176, 176)';
 })
