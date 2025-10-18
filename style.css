@@ -21,7 +21,7 @@ body {
 }
 .createBtn {
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   width: 70px;
   height: 30px;
   border: 0px;
@@ -35,10 +35,15 @@ body {
   opacity: 0.6;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 66px);
+  grid-auto-rows: 30px; 
+}
+
 .save {
-  border: 0;
-  width: 70px;
-  height: 30px;
+  border-radius: 0px 0px 0px 12px;
+  padding: 0px;
   border: 0px;
 }
 .save:hover {
@@ -49,14 +54,24 @@ body {
 }
 .eraser {
   border: 0;
-  width: 70px;
-  height: 30px;
+   padding: 0px;
   border: 0px;
 }
 .eraser:hover {
   opacity: 0.8;
 }
 .eraser:active {
+  opacity: 0.6;
+}
+.clearAll {
+  border-radius: 0px 0px 12px 0px;
+   padding: 0px;
+  border: 0px;
+}
+.clearAll:hover {
+  opacity: 0.8;
+}
+.clearAll:active {
   opacity: 0.6;
 }
 
