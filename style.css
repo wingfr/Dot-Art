@@ -42,36 +42,14 @@ body {
 }
 
 .save {
-  border-radius: 0px 0px 0px 12px;
-  padding: 0px;
+  border: 0px;
+  padding: 3px;
   border: 0px;
 }
 .save:hover {
   opacity: 0.8;
 }
 .save:active {
-  opacity: 0.6;
-}
-.eraser {
-  border: 0;
-   padding: 0px;
-  border: 0px;
-}
-.eraser:hover {
-  opacity: 0.8;
-}
-.eraser:active {
-  opacity: 0.6;
-}
-.clearAll {
-  border-radius: 0px 0px 12px 0px;
-   padding: 0px;
-  border: 0px;
-}
-.clearAll:hover {
-  opacity: 0.8;
-}
-.clearAll:active {
   opacity: 0.6;
 }
 
@@ -93,19 +71,56 @@ body {
   user-select: none;
 }
 
+.colorContainer {
+  display: grid;
+  border: 1px solid #333;
+  border-radius: 15px;
+  background-color: rgb(198, 229, 255);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 170px;
+  justify-content: center;
+}
+.clearBtns {
+  display: grid;
+  grid-template-columns: repeat(2, 66px);
+/* background-color: bisque; */
+  margin-top: 7px;
+  justify-content: center;
+}
+.eraser {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.eraser:hover {
+  opacity: 0.8;
+}
+.eraser:active {
+  opacity: 0.6;
+}
+.clearAll {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.clearAll:hover {
+  opacity: 0.8;
+}
+.clearAll:active {
+  opacity: 0.6;
+}
+
 .colors {
   display: grid;
   grid-template-columns: repeat(7, 20px);
   grid-auto-rows: 20px;   
-  width: 150px;
   justify-content: center;
-  border: 1px solid #333;
+  border: 0px solid #333;
   border-radius: 10px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: aliceblue;
+  background-color: rgb(0, 136, 255);
   margin-top: auto;
   margin-bottom: auto;
 }
