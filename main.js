@@ -32,6 +32,8 @@ const white4 = $doc.getElementById('white4');
 const purple4= $doc.getElementById('purple4');
 const saveBtn = $doc.getElementById('save');
 const eraser = $doc.getElementById('eraser');
+const clearAll = $doc.getElementById('clearAll');
+const pixels = $doc.querySelectorAll('.pixel')
 let isDrawing = false;
 let currentColor = 'black';
 
@@ -101,6 +103,13 @@ saveBtn.addEventListener('click', () => {
 eraser.addEventListener('click', () => {
   currentColor = 'erase'; 
 });
+
+clearAll.addEventListener('click', () => {
+    const pixels = $doc.querySelectorAll('.pixel');
+    pixels.forEach(pixel => {
+        pixel.style.backgroundColor = '';
+    });
+})
 
 red.addEventListener('click', () => {
     currentColor = 'red'
