@@ -36,7 +36,6 @@ body {
 }
 
 .save {
-  display: inline-block;
   border: 0;
   width: 70px;
   height: 30px;
@@ -46,6 +45,18 @@ body {
   opacity: 0.8;
 }
 .save:active {
+  opacity: 0.6;
+}
+.eraser {
+  border: 0;
+  width: 70px;
+  height: 30px;
+  border: 0px;
+}
+.eraser:hover {
+  opacity: 0.8;
+}
+.eraser:active {
   opacity: 0.6;
 }
 
