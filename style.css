@@ -37,7 +37,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 66px);
+  grid-template-columns: repeat(1, 66px);
   grid-auto-rows: 30px; 
 }
 

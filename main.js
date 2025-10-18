@@ -34,6 +34,10 @@ const saveBtn = $doc.getElementById('save');
 const eraser = $doc.getElementById('eraser');
 const clearAll = $doc.getElementById('clearAll');
 const pixels = $doc.querySelectorAll('.pixel')
+const saveGallery = $doc.getElementById('saveGallery');
+const showGallery = $doc.getElementById('showGallery');
+const gallery = $doc.getElementById('gallery');
+const galleryContainer = $doc.getElementById('galleryContainer');
 let isDrawing = false;
 let currentColor = 'black';
 
@@ -223,3 +227,4 @@ black4.addEventListener('click', () => {
     currentColor = 'rgb(176, 176, 176)'
     colorContainer.style.boxShadow = '0px 0px 4px rgb(176, 176, 176)';
 })
+
