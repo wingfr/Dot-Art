@@ -30,7 +30,8 @@ const green4 = $doc.getElementById('green4');
 const yellow4 = $doc.getElementById('yellow4');
 const white4 = $doc.getElementById('white4');
 const purple4= $doc.getElementById('purple4');
-const saveBtn = document.getElementById('save');
+const saveBtn = $doc.getElementById('save');
+const eraser = $doc.getElementById('eraser');
 let isDrawing = false;
 let currentColor = 'black';
 
@@ -58,13 +59,21 @@ createBtn.addEventListener('click', () => {
 
         
         pixel.addEventListener('mousedown', () => {
-        pixel.style.backgroundColor = currentColor;
+            if(currentColor === 'erase') {
+                pixel.style.backgroundColor = '';
+            } else {
+                pixel.style.backgroundColor = currentColor;
+            }    
         });
             
         pixel.addEventListener('mouseover', () => {
-        if (isDrawing) {
-            pixel.style.backgroundColor = currentColor; // 長押しドラッグ
-        }
+            if (isDrawing) {
+                if(currentColor === 'erase'){
+                    pixel.style.backgroundColor = '';
+                } else {
+                pixel.style.backgroundColor = currentColor; // 長押しドラッグ
+                }
+            }
         });
         
     
@@ -72,12 +81,25 @@ createBtn.addEventListener('click', () => {
 })
 
 saveBtn.addEventListener('click', () => {
-  html2canvas(display).then((canvas) => {
+  // いったん border を消す
+  const prevBorder = display.style.border;
+  display.style.border = 'none';
+
+  html2canvas(display, {
+    backgroundColor: null // 透過背景
+  }).then((canvas) => {
     const link = document.createElement('a');
-    link.download = 'dot-art.png';   // 保存するファイル名
-    link.href = canvas.toDataURL(); // PNGデータに変換
+    link.download = 'dot-art.png';
+    link.href = canvas.toDataURL('image/png');
     link.click();
+
+    // 保存が終わったら border を元に戻す
+    display.style.border = prevBorder;
   });
+});
+
+eraser.addEventListener('click', () => {
+  currentColor = 'erase'; 
 });
 
 red.addEventListener('click', () => {

@@ -52,8 +52,12 @@ body {
 .pixel {
   width:15px;
   height: 15px;
-  border: 1px solid #b3b3b3;
+  border: 0px solid #b3b3b3;
 }
+.pixel:hover {
+  background-color: #9b9b9b;
+}
+
 #display {
   display: grid;
   margin-top: 10px;
